@@ -90,8 +90,6 @@ await page.click('button.save', { timeout: 60000 }); // 60 seconds
 
 
 
-
-
 // //Update the added Asset 
 // test('Update test', async ({ page }) => {
 //     await page.goto('https://railroadsoftware.io/staging/trackAsset/client/user/login/entry?time=1756374172');
