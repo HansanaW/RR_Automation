@@ -81,13 +81,14 @@ console.log('location added PASS');
 
 await page.click('button.save', { timeout: 60000 }); // 60 seconds
 
+await page.click('button.save', { timeout: 60000 }); // 60 seconds
 
   // await console.log('Add new Asset successfully');
  await page.goto('https://railroadsoftware.io/staging/trackAsset/client/#miscequipments/equipments_v3/index%7Ctypeid%7C1TjhVCPlNorxrbQa_WxzbP7F5KMjZWHZUjcHH0fn4_o%7Ctabelement%7C');
 
 });
 
-
+// TEST PUSH
 
 
 // //Update the added Asset 
