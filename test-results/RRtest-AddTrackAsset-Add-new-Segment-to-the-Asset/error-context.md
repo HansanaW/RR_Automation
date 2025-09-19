@@ -1,0 +1,267 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e2]:
+    - text:                                                                                                                                                                                                                                                     
+    - generic [ref=e3]:
+      - complementary [ref=e4]:
+        - list [ref=e6]:
+          - listitem [ref=e7]:
+            - button "" [ref=e8] [cursor=pointer]:
+              - generic [ref=e9] [cursor=pointer]: 
+          - listitem [ref=e10]
+          - list [ref=e14]:
+            - listitem [ref=e15]:
+              - link "Home" [ref=e16] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e18]:
+              - link [ref=e19] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:                                                                                 
+            - listitem [ref=e21]:
+              - link [ref=e22] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:    
+            - listitem [ref=e24]:
+              - link [ref=e25] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e27]:
+              - link [ref=e28] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e30]:
+              - link [ref=e31] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e33]:
+              - link [ref=e34] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e36]:
+              - link [ref=e37] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:      
+            - listitem [ref=e39]:
+              - link "Reports" [ref=e40] [cursor=pointer]:
+                - /url: https://railroadsoftware.io/staging/trackAsset/client/#reports/reports/index
+                - text: 
+              - text:   
+            - listitem [ref=e42]:
+              - link "Support" [ref=e43] [cursor=pointer]:
+                - /url: https://railroadsoftware.io/staging/trackAsset/client/#client/client/support
+      - generic [ref=e45]:
+        - generic [ref=e47]:
+          - link "Goto Dashboard" [ref=e49] [cursor=pointer]:
+            - /url: https://railroadsoftware.io/staging/trackAsset/client/#dashboard/dashboardoverview/index
+            - img [ref=e50] [cursor=pointer]
+          - text: 
+          - generic [ref=e51]:
+            - img "Image" [ref=e53]
+            - button "USSugar " [ref=e56] [cursor=pointer]:
+              - text: USSugar
+              - generic [ref=e57] [cursor=pointer]: 
+          - link "1932 " [ref=e58] [cursor=pointer]:
+            - /url: javascript:;
+            - generic "Notifications" [ref=e59] [cursor=pointer]:
+              - generic [ref=e60] [cursor=pointer]: "1932"
+              - generic [ref=e61] [cursor=pointer]: 
+          - button "" [ref=e63] [cursor=pointer]:
+            - generic [ref=e65] [cursor=pointer]: 
+          - generic [ref=e68]: 
+        - generic [ref=e70]:
+          - generic [ref=e74]:
+            - text:  >
+            - generic [ref=e75]:
+              - generic [ref=e76]: All Assets
+              - table [ref=e82]:
+                - rowgroup [ref=e83]:
+                  - row [ref=e84]:
+                    - cell [ref=e85]:
+                      - generic [ref=e86]:
+                        - img [ref=e88]
+                        - generic [ref=e89]:
+                          - group [ref=e91]:
+                            - row "20" [ref=e92]:
+                              - rowgroup [ref=e93]:
+                                - row [ref=e94]:
+                                  - cell [ref=e95]
+                                - row "20" [ref=e96]:
+                                  - cell [ref=e97]
+                                  - cell "20" [ref=e99]:
+                                    - table [ref=e100]:
+                                      - rowgroup [ref=e101]:
+                                        - row "20" [ref=e102]:
+                                          - cell [ref=e103] [cursor=pointer]
+                                          - cell [ref=e106] [cursor=pointer]
+                                          - cell [ref=e109]
+                                          - cell [ref=e110] [cursor=pointer]
+                                          - cell [ref=e113] [cursor=pointer]
+                                          - cell "20" [ref=e116]:
+                                            - listbox [ref=e117]:
+                                              - option "5"
+                                              - option "10"
+                                              - option "20" [selected]
+                                              - option "30"
+                                              - option "50"
+                                              - option "100"
+                                              - option "200"
+                                              - option "500"
+                          - grid "20  Name Description Station Latitude Longitude Asset Type Location Group Region Status x x x x x x x x x x" [ref=e120]:
+                            - rowgroup [ref=e121]:
+                              - rowheader " Name Description Station Latitude Longitude Asset Type Location Group Region Status" [ref=e122]:
+                                - columnheader "" [ref=e123]:
+                                  - generic [ref=e125]: 
+                                - columnheader "Name" [ref=e126]:
+                                  - generic [ref=e128] [cursor=pointer]: Name
+                                - columnheader "Description" [ref=e129]:
+                                  - generic [ref=e131] [cursor=pointer]: Description
+                                - columnheader "Station" [ref=e132]:
+                                  - generic [ref=e134] [cursor=pointer]: Station
+                                - columnheader "Latitude" [ref=e135]:
+                                  - generic [ref=e137] [cursor=pointer]: Latitude
+                                - columnheader "Longitude" [ref=e138]:
+                                  - generic [ref=e140] [cursor=pointer]: Longitude
+                                - columnheader "Asset Type" [ref=e141]:
+                                  - generic [ref=e143] [cursor=pointer]: Asset Type
+                                - columnheader "Location" [ref=e144]:
+                                  - generic [ref=e146] [cursor=pointer]: Location
+                                - columnheader "Group" [ref=e147]:
+                                  - generic [ref=e149] [cursor=pointer]: Group
+                                - columnheader "Region" [ref=e150]:
+                                  - generic [ref=e152] [cursor=pointer]: Region
+                                - columnheader "Status" [ref=e153]:
+                                  - generic [ref=e155] [cursor=pointer]: Status
+                              - rowheader "x x x x x x x x x x" [ref=e156]:
+                                - columnheader [ref=e157]
+                                - columnheader "x" [ref=e160]:
+                                  - table [ref=e162]:
+                                    - rowgroup [ref=e163]:
+                                      - row "x" [ref=e164]:
+                                        - cell [ref=e165]:
+                                          - textbox "Search" [ref=e166]
+                                        - cell "x" [ref=e167]:
+                                          - generic "Reset Search Value" [ref=e168] [cursor=pointer]: x
+                                - columnheader "x" [ref=e169]:
+                                  - table [ref=e171]:
+                                    - rowgroup [ref=e172]:
+                                      - row "x" [ref=e173]:
+                                        - cell [ref=e174]:
+                                          - textbox "Search" [ref=e175]
+                                        - cell "x" [ref=e176]:
+                                          - generic "Reset Search Value" [ref=e177] [cursor=pointer]: x
+                                - columnheader "x" [ref=e178]:
+                                  - table [ref=e180]:
+                                    - rowgroup [ref=e181]:
+                                      - row "x" [ref=e182]:
+                                        - cell [ref=e183]:
+                                          - textbox "Search" [ref=e184]
+                                        - cell "x" [ref=e185]:
+                                          - generic "Reset Search Value" [ref=e186] [cursor=pointer]: x
+                                - columnheader "x" [ref=e187]:
+                                  - table [ref=e189]:
+                                    - rowgroup [ref=e190]:
+                                      - row "x" [ref=e191]:
+                                        - cell [ref=e192]:
+                                          - textbox "Search" [ref=e193]
+                                        - cell "x" [ref=e194]:
+                                          - generic "Reset Search Value" [ref=e195] [cursor=pointer]: x
+                                - columnheader "x" [ref=e196]:
+                                  - table [ref=e198]:
+                                    - rowgroup [ref=e199]:
+                                      - row "x" [ref=e200]:
+                                        - cell [ref=e201]:
+                                          - textbox "Search" [ref=e202]
+                                        - cell "x" [ref=e203]:
+                                          - generic "Reset Search Value" [ref=e204] [cursor=pointer]: x
+                                - columnheader "x" [ref=e205]:
+                                  - table [ref=e207]:
+                                    - rowgroup [ref=e208]:
+                                      - row "x" [ref=e209]:
+                                        - cell [ref=e210]:
+                                          - textbox "Search" [ref=e211]
+                                        - cell "x" [ref=e212]:
+                                          - generic "Reset Search Value" [ref=e213] [cursor=pointer]: x
+                                - columnheader "x" [ref=e214]:
+                                  - table [ref=e216]:
+                                    - rowgroup [ref=e217]:
+                                      - row "x" [ref=e218]:
+                                        - cell [ref=e219]:
+                                          - textbox "Search" [ref=e220]
+                                        - cell "x" [ref=e221]:
+                                          - generic "Reset Search Value" [ref=e222] [cursor=pointer]: x
+                                - columnheader "x" [ref=e223]:
+                                  - table [ref=e225]:
+                                    - rowgroup [ref=e226]:
+                                      - row "x" [ref=e227]:
+                                        - cell [ref=e228]:
+                                          - textbox "Search" [ref=e229]
+                                        - cell "x" [ref=e230]:
+                                          - generic "Reset Search Value" [ref=e231] [cursor=pointer]: x
+                                - columnheader "x" [ref=e232]:
+                                  - table [ref=e234]:
+                                    - rowgroup [ref=e235]:
+                                      - row "x" [ref=e236]:
+                                        - cell [ref=e237]:
+                                          - textbox "Search" [ref=e238]
+                                        - cell "x" [ref=e239]:
+                                          - generic "Reset Search Value" [ref=e240] [cursor=pointer]: x
+                                - columnheader "x" [ref=e241]:
+                                  - table [ref=e243]:
+                                    - rowgroup [ref=e244]:
+                                      - row "x" [ref=e245]:
+                                        - cell [ref=e246]:
+                                          - textbox "Search" [ref=e247]
+                                        - cell "x" [ref=e248]:
+                                          - generic "Reset Search Value" [ref=e249] [cursor=pointer]: x
+                          - generic [ref=e250]:
+                            - generic:
+                              - grid "20  Name Description Station Latitude Longitude Asset Type Location Group Region Status x x x x x x x x x x":
+                                - rowgroup:
+                                  - row:
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+                                    - gridcell
+            - emphasis [ref=e251]: "*"
+            - emphasis [ref=e252]: "*"
+          - text: 
+      - text:  
+      - contentinfo [ref=e253]:
+        - strong [ref=e254]:
+          - generic [ref=e255]:   Copyright 2025 © TrackAsset. All Rights Reserved
+  - text: 
+  - option "Select Defect Type" [selected]
+  - option "Select Defect Code" [selected]
+  - emphasis [ref=e256]: "*"
+  - emphasis [ref=e257]: "*"
+  - emphasis [ref=e258]: "*"
+  - option "Search By" [selected]
+  - option "Assets"
+  - option "Components"
+  - option "Parts"
+  - option "Subcomponents"
+  - option "Segments"
+  - option "Month" [selected]
+  - option "Year"
+  - option "Select Catalog" [selected]
+  - option "Select Catalog" [selected]
+```

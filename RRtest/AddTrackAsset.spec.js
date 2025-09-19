@@ -1,7 +1,8 @@
-const {test, expect} = require('@playwright/test');
-const { text } = require('stream/consumers');
+import { test, expect } from '@playwright/test';
+//const {test, expect} = require('@playwright/test');
+//const { text } = require('stream/consumers');
 
-/**test('Invalid Login shows error message', async ({page})=>
+/* test('Invalid Login shows error message', async ({page})=>
  {
     
     await page.goto("https://railroadsoftware.io/staging/trackAsset/client/user/login/entry");
@@ -12,8 +13,8 @@ const { text } = require('stream/consumers');
     console.log(await page.locator('#err_msg_cnt').textContent());
     await expect(page.locator('#err_msg_cnt')).toContainText('wrong email');
  });
-**/
-test.beforeEach('Successful Login', async ({page})=>
+*/
+test.beforeEach(async ({page})=>
  {
     
     await page.goto("https://railroadsoftware.io/staging/trackAsset/client/user/login/entry");
@@ -46,7 +47,7 @@ test.beforeEach('Successful Login', async ({page})=>
    await page.locator('#ce_group_chosen > a').click();
    await page.locator('#ce_group_chosen').getByText('Bridge Inspection').click();
    await page.locator('#ce_equipment_name').click();
-   await page.locator('#ce_equipment_name').fill('REG Track8');
+   await page.locator('#ce_equipment_name').fill('REG Track9');
    await page.locator('#ce_company_region_id_chosen > a').click();
    await page.locator('#ce_company_region_id_chosen').getByText('American', { exact: true }).click();
    await page.locator('#ce_company_location_id_chosen > a').click();
@@ -57,7 +58,7 @@ test.beforeEach('Successful Login', async ({page})=>
 
   });
 
-  test.only('Add new Segment to the Asset', async ({page})=>
+  test('Add new Segment to the Asset', async ({page})=>
 {
   // Expand the Assets menu by clicking on it
     await page.locator('[data-toggle="offcanvas"][title="Menu Collapse"]').click();
@@ -74,22 +75,34 @@ test.beforeEach('Successful Login', async ({page})=>
     await page.getByRole('link', { name: 'Asset Details' }).click();
     await console.log('✅ Successfully Open Assets detail page');
 
-  //Select Add segment modal
-    await page.locator('#equipments_v3').getByText('Add Segment').click();
-    console.log('✅ Clicked "Add Segment" button');
-  
-    const addMultipleSegmentModal = page.locator('#add-multiple_segment.overlay11.assdet-pp');
+//Select Add segment button
+  await page.locator('#equipments_v3').getByTitle('Add Segment').click();
+  await page.waitForTimeout(2000);
+  //Use JavaScript click to bypass visibility restrictions
+  const jsClickResult = await page.evaluate(() => {
+  const element = document.querySelector('#insert_asset_segment');
+  if (element) {
+    element.click();
+    return { success: true, className: element.className };
+  }
+  return { success: false };
+  });
     
-    // Now, wait for this specific modal to be visible.
-    await expect(addMultipleSegmentModal).toBeVisible();
-    console.log('✅ Modal is now visible');
+    await page.locator('#segment_name').fill("Seg3");
+    await page.locator('#start_mp').click();
+    await page.locator('#start_mp').fill('1');
+    await page.locator('#end_mp').click();
+    await page.locator('#end_mp').fill('1.1');
+    await page.getByRole('button', { name: 'Next' }).click();
+    await page.getByRole('row', { name: 'TRACK INSPECTION 7 0 1 Green' }).getByRole('checkbox').check();
+    await page.getByRole('button', { name: 'Save' }).click();
 
-    // Assert that the text inside the modal is visible.
-    const modalAddSegmentText = addMultipleSegmentModal.getByText('Add Segment');
-    await expect(modalAddSegmentText).toBeVisible();
-    console.log('✅ Verified "Add Segment" text is visible inside the modal');
+// Verification
+await page.waitForTimeout(2000); // Wait for save to complete
+await expect(page.getByRole('cell', { name: ' Seg3' })).toBeVisible();
+console.log('✅ Segment successfully added and verified');
 
-    console.log('✅ Successfully opened and verified the modal');
+await page.screenshot({ path: 'segment-verification-success.png' });
 
   });
      

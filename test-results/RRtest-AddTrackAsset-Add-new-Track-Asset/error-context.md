@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - text: 
+  - generic [ref=e2]:
+    - text:                                                                                                                                                                                                                                                     
+    - generic [ref=e3]:
+      - complementary [ref=e4]:
+        - list [ref=e6]:
+          - listitem [ref=e7]:
+            - button "" [ref=e8] [cursor=pointer]:
+              - generic [ref=e9] [cursor=pointer]: 
+          - listitem [ref=e10]
+          - list [ref=e14]:
+            - listitem [ref=e15]:
+              - link "Home" [ref=e16] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e18]:
+              - link [ref=e19] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:                                                                                 
+            - listitem [ref=e21]:
+              - link [ref=e22] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:    
+            - listitem [ref=e24]:
+              - link [ref=e25] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e27]:
+              - link [ref=e28] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e30]:
+              - link [ref=e31] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e33]:
+              - link [ref=e34] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:   
+            - listitem [ref=e36]:
+              - link [ref=e37] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - text: 
+              - text:      
+            - listitem [ref=e39]:
+              - link "Reports" [ref=e40] [cursor=pointer]:
+                - /url: https://railroadsoftware.io/staging/trackAsset/client/#reports/reports/index
+                - text: 
+              - text:   
+            - listitem [ref=e42]:
+              - link "Support" [ref=e43] [cursor=pointer]:
+                - /url: https://railroadsoftware.io/staging/trackAsset/client/#client/client/support
+      - generic [ref=e45]:
+        - generic [ref=e47]:
+          - link "Goto Dashboard" [ref=e49] [cursor=pointer]:
+            - /url: https://railroadsoftware.io/staging/trackAsset/client/#dashboard/dashboardoverview/index
+            - img [ref=e50] [cursor=pointer]
+          - text: 
+          - generic [ref=e51]:
+            - img "Image" [ref=e53]
+            - button "USSugar " [ref=e56] [cursor=pointer]:
+              - text: USSugar
+              - generic [ref=e57] [cursor=pointer]: 
+          - link "1932 " [ref=e58] [cursor=pointer]:
+            - /url: javascript:;
+            - generic "Notifications" [ref=e59] [cursor=pointer]:
+              - generic [ref=e60] [cursor=pointer]: "1932"
+              - generic [ref=e61] [cursor=pointer]: 
+          - button "" [ref=e63] [cursor=pointer]:
+            - generic [ref=e65] [cursor=pointer]: 
+          - generic [ref=e68]: 
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - text:  > >
+            - generic [ref=e72]:
+              - list [ref=e73]:
+                - listitem [ref=e74]:
+                  - link "Asset Details" [ref=e75]:
+                    - /url: https://railroadsoftware.io/staging/trackAsset/client/#asset-tab
+              - generic [ref=e79]:
+                - emphasis [ref=e80]: "*"
+                - emphasis [ref=e81]: "*"
+                - emphasis [ref=e82]: "*"
+                - emphasis [ref=e83]: "*"
+                - emphasis [ref=e84]: "*"
+                - option "Active" [selected]
+                - option "Inactive"
+              - emphasis [ref=e85]: "*"
+              - emphasis [ref=e86]: "*"
+              - emphasis [ref=e87]: "*"
+              - emphasis [ref=e88]: "*"
+              - emphasis [ref=e89]: "*"
+              - emphasis [ref=e90]: "*"
+              - emphasis [ref=e91]: "*"
+              - option "10" [selected]
+              - option "20"
+              - option "50"
+              - option "100"
+              - option [selected]
+              - option [selected]
+              - option [selected]
+              - option "Select Asset Item" [selected]
+              - option "Select" [selected]
+              - option "Select Corrective Action" [selected]
+              - option "Pending" [selected]
+              - option "In-progress"
+              - option "Completed"
+          - text: 
+      - text:  
+      - contentinfo [ref=e92]:
+        - strong [ref=e93]:
+          - generic [ref=e94]:   Copyright 2025 © TrackAsset. All Rights Reserved
+  - text: 
+  - option "Select Defect Type" [selected]
+  - option "Select Defect Code" [selected]
+  - emphasis [ref=e95]: "*"
+  - emphasis [ref=e96]: "*"
+  - emphasis [ref=e97]: "*"
+  - option "Search By" [selected]
+  - option "Assets"
+  - option "Components"
+  - option "Parts"
+  - option "Subcomponents"
+  - option "Segments"
+  - option "Month" [selected]
+  - option "Year"
+  - option "Select Catalog" [selected]
+  - option "Select Catalog" [selected]
+```

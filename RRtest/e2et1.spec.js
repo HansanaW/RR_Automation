@@ -19,7 +19,7 @@ test('test', async ({ page }) => {
   await page.locator('a').filter({ hasText: /^Select group$/ }).click();
   await page.locator('#ce_group_chosen').getByText('Bridge Inspection').click();
   await page.getByRole('textbox', { name: 'Please Enter Name' }).click();
-  await page.getByRole('textbox', { name: 'Please Enter Name' }).fill('d3x');
+  await page.getByRole('textbox', { name: 'Please Enter Name' }).fill('d13x');
   await page.locator('a').filter({ hasText: 'Select region' }).click();
   await page.locator('#ce_company_region_id_chosen').getByText('6th').click();
   await page.locator('a').filter({ hasText: 'Select location' }).click();

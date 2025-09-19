@@ -35,7 +35,7 @@ test.describe('Asset Management', () => {
     console.log('✅ Asset group selected');
 
     // Enter Asset Name
-    const assetName = 'Hd2';
+    const assetName = 'Hd12';
     await page.getByRole('textbox', { name: 'Please Enter Name' }).fill(assetName);
     console.log('✅ Asset name added');
 
